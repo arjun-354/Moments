@@ -257,9 +257,6 @@ function VideoTile({
       texture.colorSpace = THREE.SRGBColorSpace
       texture.minFilter = THREE.LinearFilter
       texture.magFilter = THREE.LinearFilter
-      texture.wrapS = THREE.RepeatWrapping
-      texture.repeat.x = -1
-      texture.offset.x = 1
       setVideoTexture(texture)
       videoElement.play().catch(() => {
         // Autoplay might be blocked, that's okay
